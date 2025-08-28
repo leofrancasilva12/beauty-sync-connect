@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 const Header = () => {
   return (
@@ -26,9 +28,45 @@ const Header = () => {
           </a>
         </nav>
 
-        <Button variant="accent" size="sm" className="md:hidden">
-          Menu
-        </Button>
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="accent" size="sm" className="md:hidden">
+              <Menu className="h-4 w-4" />
+              <span className="sr-only">Abrir menu</span>
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-[300px]">
+            <nav className="flex flex-col space-y-6 mt-6">
+              <a 
+                href="#inicio" 
+                className="text-foreground hover:text-primary transition-colors duration-300 text-lg font-medium"
+              >
+                Início
+              </a>
+              <a 
+                href="#servicos" 
+                className="text-foreground hover:text-primary transition-colors duration-300 text-lg font-medium"
+              >
+                Serviços
+              </a>
+              <a 
+                href="#sobre" 
+                className="text-foreground hover:text-primary transition-colors duration-300 text-lg font-medium"
+              >
+                Sobre
+              </a>
+              <a 
+                href="#contato" 
+                className="text-foreground hover:text-primary transition-colors duration-300 text-lg font-medium"
+              >
+                Contato
+              </a>
+              <Button variant="accent" className="w-full mt-6">
+                Agendar Consulta
+              </Button>
+            </nav>
+          </SheetContent>
+        </Sheet>
         
         <Button variant="accent" className="hidden md:flex">
           Agendar Consulta
