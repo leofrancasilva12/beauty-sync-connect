@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
-  return (
-    <footer className="bg-gradient-card border-t border-border">
+  return <footer className="bg-gradient-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -12,10 +10,7 @@ const Footer = () => {
                 Estética Premium
               </span>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
-              Transformamos beleza em bem-estar através de tratamentos personalizados 
-              e técnicas avançadas.
-            </p>
+            
           </div>
           
           <div className="space-y-4">
@@ -67,8 +62,6 @@ const Footer = () => {
           <p>&copy; 2024 Estética Premium. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
