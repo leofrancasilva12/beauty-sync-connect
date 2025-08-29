@@ -24,7 +24,7 @@ const SchedulingModal = ({ isOpen, onClose, selectedService }: SchedulingModalPr
   const [clientPhone, setClientPhone] = useState("");
   const [service, setService] = useState("");
   const [notes, setNotes] = useState("");
-  const [webhookUrl, setWebhookUrl] = useState("https://webhook.n8n.cloud/webhook/your-webhook-id");
+
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
@@ -65,18 +65,6 @@ const SchedulingModal = ({ isOpen, onClose, selectedService }: SchedulingModalPr
     };
 
     try {
-      // Enviar para webhook n8n
-      if (webhookUrl && webhookUrl !== "https://webhook.n8n.cloud/webhook/your-webhook-id") {
-        await fetch(webhookUrl, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          mode: "no-cors",
-          body: JSON.stringify(schedulingData),
-        });
-      }
-
       // Preparar mensagem do WhatsApp
       const whatsappMessage = `Olá! Gostaria de agendar um procedimento estético.
 
@@ -232,18 +220,7 @@ const SchedulingModal = ({ isOpen, onClose, selectedService }: SchedulingModalPr
                 />
               </div>
 
-              <div>
-                <Label htmlFor="webhook" className="text-sm text-muted-foreground">
-                  Webhook n8n (opcional)
-                </Label>
-                <Input
-                  id="webhook"
-                  value={webhookUrl}
-                  onChange={(e) => setWebhookUrl(e.target.value)}
-                  placeholder="https://webhook.n8n.cloud/webhook/your-webhook-id"
-                  className="mt-1"
-                />
-              </div>
+
             </div>
 
             {/* Botões */}
