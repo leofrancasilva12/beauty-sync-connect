@@ -22,7 +22,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-hero rounded-full"></div>
             <span className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-              Estética Premium
+              Viva mais bella
             </span>
           </div>
           

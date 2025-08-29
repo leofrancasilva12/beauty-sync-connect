@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-hero rounded-full"></div>
               <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                Estética Premium
+                Viva mais bella
               </span>
             </div>
             
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; 2024 Estética Premium. Todos os direitos reservados.</p>
+          <p>&copy; 2024 Viva mais bella. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>;
