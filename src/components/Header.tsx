@@ -61,15 +61,23 @@ const Header = () => {
               >
                 Contato
               </a>
-              <Button variant="accent" className="w-full mt-6">
-                Agendar Consulta
+              <Button 
+                variant="accent" 
+                className="w-full mt-6"
+                onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de agendar um procedimento estético.', '_blank')}
+              >
+                Agendar WhatsApp
               </Button>
             </nav>
           </SheetContent>
         </Sheet>
         
-        <Button variant="accent" className="hidden md:flex">
-          Agendar Consulta
+        <Button 
+          variant="accent" 
+          className="hidden md:flex"
+          onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de agendar um procedimento estético.', '_blank')}
+        >
+          Agendar WhatsApp
         </Button>
       </div>
     </header>
