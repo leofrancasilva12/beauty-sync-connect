@@ -94,6 +94,23 @@ const Index = () => {
       <Header />
       <Hero />
       
+      <section id="sobre" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Sobre <span className="bg-gradient-hero bg-clip-text text-transparent">Nossa Clínica</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Com mais de 5 anos de experiência no mercado de estética, nossa clínica se dedica 
+              a oferecer tratamentos personalizados e de alta qualidade. Utilizamos as técnicas 
+              mais avançadas e equipamentos de última geração para garantir resultados excepcionais 
+              e a satisfação completa de nossos clientes.
+            </p>
+            
+          </div>
+        </div>
+      </section>
+
       <section id="servicos" className="py-20 bg-gradient-subtle">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -108,23 +125,6 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {services.map(service => <ServiceCard key={service.id} image={service.image} title={service.title} description={service.shortDescription} onLearnMore={() => handleLearnMore(service)} />)}
-          </div>
-        </div>
-      </section>
-
-      <section id="sobre" className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Sobre <span className="bg-gradient-hero bg-clip-text text-transparent">Nossa Clínica</span>
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Com mais de 5 anos de experiência no mercado de estética, nossa clínica se dedica 
-              a oferecer tratamentos personalizados e de alta qualidade. Utilizamos as técnicas 
-              mais avançadas e equipamentos de última geração para garantir resultados excepcionais 
-              e a satisfação completa de nossos clientes.
-            </p>
-            
           </div>
         </div>
       </section>
