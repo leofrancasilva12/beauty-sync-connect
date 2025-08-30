@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-hero rounded-full"></div>
               <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                Estética Premium
+                Viva MaisBella
               </span>
             </div>
             
@@ -33,7 +33,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <span>📧</span>
-                <span>contato@esteticapremium.com.br</span>
+                <span>contato@vivamaisbella.com.br</span>
               </li>
               <li className="flex items-center gap-2">
                 <span>📍</span>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; 2024 Estética Premium. Todos os direitos reservados.</p>
+          <p>&copy; 2024 Viva MaisBella. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>;
