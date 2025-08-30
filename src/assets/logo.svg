@@ -1,0 +1,26 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Texto "VIVA MAIS BELLA" -->
+  <text x="10" y="45" 
+        font-family="Arial, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="white" 
+        text-transform="uppercase">
+    VIVA MAIS BELLA
+  </text>
+  
+  <!-- Elemento gráfico estilizado (borboleta/chama) -->
+  <g transform="translate(220, 20)">
+    <!-- Forma esquerda da borboleta/chama -->
+    <path d="M0 25 Q-20 15 -15 0 Q-8 -15 0 0 Q8 -15 15 0 Q20 15 0 25 Z" 
+          fill="white" 
+          stroke="white" 
+          stroke-width="0.5"/>
+    
+    <!-- Forma direita da borboleta/chama -->
+    <path d="M15 0 Q20 -15 25 0 Q30 15 15 25 Q-5 15 0 0 Q8 -15 15 0 Z" 
+          fill="white" 
+          stroke="white" 
+          stroke-width="0.5"/>
+  </g>
+</svg>
